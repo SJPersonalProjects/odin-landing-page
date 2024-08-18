@@ -1,0 +1,45 @@
+/* Roboto used as the main font across the landing page. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+
+:root {
+    /* Background color */
+    --primary-dark: #1F2937;
+
+    /* Font colors. */
+    --primary-text-color: #F9FAF8; /* used as main hero font color and header logo font color. */
+    --secondary-text-color: #E5E7EB; /* used in the header links. */
+}
+
+.header {
+    width: 100%;
+    height: 92px;
+    background-color: var(--primary-dark); /* The variable sets the dark color to the header. */
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .site-logo,
+.header .header-links {
+    display: flex;
+    align-items: center;
+}
+
+.header .site-logo {
+    font-size: 24px;
+    color: var(--primary-text-color);
+    font-weight: 800;
+}
+
+.header .header-links ul{
+    display: flex;
+    color: var(--secondary-text-color);
+    list-style-type: none;
+    font-size: 18px;
+    gap: 32px;
+}
