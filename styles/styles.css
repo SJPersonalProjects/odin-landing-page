@@ -14,14 +14,25 @@
     /* Font colors. */
     --primary-text-color: #F9FAF8; /* used as main hero font color and header logo font color. */
     --secondary-text-color: #E5E7EB; /* used in the header links. */
+
+    /* background color for buttons. */
+    --button-background-color: #3882F6;
 }
 
 .header {
     width: 100%;
     height: 92px;
     background-color: var(--primary-dark); /* The variable sets the dark color to the header. */
+}
+
+.header-content {
+    width: auto;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 256px;
+    margin-right: 256px;
 }
 
 .header .site-logo,
@@ -38,8 +49,79 @@
 
 .header .header-links ul{
     display: flex;
-    color: var(--secondary-text-color);
     list-style-type: none;
-    font-size: 18px;
     gap: 32px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-size: 18px;
+}
+
+
+/* Styling the hero section of the landing page. */
+
+/* Hero section. */
+.hero-section {
+    width: 100%;
+    height: 468px;
+    background-color: var(--primary-dark);
+    display: flex;
+    justify-content: center;
+}
+
+.hero-content-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 256px;
+    margin-right: 256px;
+}
+
+
+/* Styling hero content part of the section. */
+.hero-content-container .hero-content {
+    flex: 1;
+    padding-right: 36px;
+}
+
+.hero-content .hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--primary-text-color);
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: var(--secondary-text-color);
+}
+
+.hero-content button {
+    background-color: var(--button-background-color);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 32px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Styling hero image part of the section. */
+.hero-content-container .hero-image {
+    flex: 1;
+    width: 100%;
+    height: 226px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 36px;
+}
+
+.hero-content-container .hero-image .place-holder-text {
+    color: white;
+    font-style: italic;
 }
