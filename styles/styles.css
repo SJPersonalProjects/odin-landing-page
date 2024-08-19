@@ -49,6 +49,11 @@
     color: var(--primary-text-color);
     font-weight: 800;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.header .site-logo:hover {
+    animation: scaleUp 0.3s forwards;
 }
 
 .header .header-links ul{
@@ -61,6 +66,11 @@
     text-decoration: none;
     color: var(--secondary-text-color);
     font-size: 18px;
+    transition: tranform 0.3s ease;
+}
+
+.header ul li:hover {
+    animation: scaleUp 0.3s forwards;
 }
 
 
@@ -112,10 +122,12 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .hero-content button:hover {
     background-color: var(--button-background-hover-color);
+    animation: wiggle 0.3s ease-in-out;
 }
 
 /* Styling hero image part of the section. */
@@ -257,10 +269,12 @@
     padding: 4px 36px;
     border-radius: 8px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .sign-up-content-container button:hover {
     background-color: var(--button-background-hover-color);
+    animation: wiggle 0.3s ease-in-out;
 }
 
 /* Styling the footer section of the landing page. */
@@ -279,4 +293,27 @@
     font-size: 18px;
     font-weight: 300;
     color: white;
+}
+
+/* Wiggle animation for buttons of the landing page. */
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+}
+
+/* Scale animation for the logo and links of the landing page. */
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
 }
