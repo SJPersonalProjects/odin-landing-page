@@ -10,6 +10,7 @@
 :root {
     /* Background color */
     --primary-dark: #1F2937;
+    --secondary-dark: #E5E7EB;
 
     /* Font colors. */
     --primary-text-color: #F9FAF8; /* used as main hero font color and header logo font color. */
@@ -132,7 +133,7 @@
 
  /* information section. */
  .information-section {
-    width: auto;
+    width: 100%;
     min-height: 468px;
     background-color: white;
     display: flex;
@@ -173,3 +174,35 @@
     color: var(--primary-dark-text-color);
  }
 
+
+ /* Styling testimonial section of the landing page. */
+
+ /* testimonial-section. */
+ .testimonial-section {
+    width: 100%;
+    min-height: 468px;
+    background-color: var(--secondary-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .testimonial-section div {
+    width: 50%;
+ }
+
+ .testimonial-section .testimonial {
+    font-size: 36px;
+    font-weight: 300; /* light. */
+    color: var(--primary-dark-text-color);
+    font-style: italic;
+ }
+
+ .testimonial-section .writer {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--primary-dark-text-color);
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+ }
