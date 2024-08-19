@@ -206,3 +206,48 @@
     justify-content: flex-end;
     margin-top: 8px;
  }
+
+ /* Styling the sign-up section of the landing page. */
+
+ /* sign-up-section. */
+ .sign-up-section {
+    width: 100%;
+    min-height: 392px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .sign-up-section .sign-up-content-container {
+    background-color: var(--button-background-color);
+    width: 60%;
+    height: 136px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 112px;
+ }
+
+ .sign-up-content-container .title {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+ }
+
+ .sign-up-content-container .description {
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+ }
+
+.sign-up-content-container button {
+    background-color: var(--button-background-color);
+    color: white;
+    font-size: 18px;
+    border: 2px solid white;
+    padding: 4px 36px;
+    border-radius: 8px;
+    cursor: pointer;
+}
